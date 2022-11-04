@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Jude's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="font-poppins pb-12">
+    <!-- Navbar -->
+    <nav class="relative container mx-auto py-6">
+      <!-- Flex container -->
+      <div class="flex items-center justify-between px-8 md:px-14 lg:px-24 w-full">
+        <!-- Logo -->
+        <div class="pt-2">
+          <img src="img/logo2.svg" alt="logo" class="h-8" />
+        </div>
+        <!-- Menu items -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#home" class="hover:text-darkGrayishBlue">Home</a>
+          <a href="#work" class="hover:text-darkGrayishBlue">My work</a>
+        </div>
+        <!-- Button -->
+        <a href="#contact"
+          class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">
+          Contact
+        </a>
+
+        <!-- Hamburger Icon -->
+        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+          <a href="#home" class="hover:text-darkGrayishBlue">Home</a>
+          <a href="#work" class="hover:text-darkGrayishBlue">My work</a>
+          <a href="#contact" class="hover:text-darkGrayishBlue">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      <div class="flex flex-wrap-reverse md:flex-nowrap">
+        <!-- static nav dots-->
+        <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
+          <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
+            <a href="" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-slate-100">
+              <span class="bg-slate-100 px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
+            </a>
+            <a href="#work" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-slate-100">
+              <span class="bg-slate-100 px-2 py-1 rounded-md ml-10 opacity-0">Work</span>
+            </a>
+            <a href="#contact" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-slate-100">
+              <span class="bg-slate-100 px-2 py-1 rounded-md ml-10 opacity-0">Contact</span>
+            </a>
+          </div>
+        </nav>
+
+        <!-- Left item -->
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2 lg:pt-16">
+          <h1 class="font-bold text-5xl md:text-4xl lg:text-5xl xl:text-7xl text-center md:text-left">Building
+            beautiful web
+            experiences.
+          </h1>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Hi' I'm a full-stack web developer based in Germany. Currently in search of a professional experience
+            in web develepment where i can leverage my skills and contribute to the success of teams. Equally eager
+            to continue learning and solidifying my skills. 
+          </p>
+        </div>
+
+        <!-- Image -->
+        <div class="justify-center md:justify-start max-w-xl mt-0 md:my-16">
+          <img src="img/portfolio-profile.jpeg" alt=""
+            class="rounded-lg bottom-0 right-0 lg:left-0 mx-auto h-5/6 md:h2/3">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Work section-->
+    <div class="container mt-32 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      <section class="w-full">
+        <h2 id="work" class="secondary-title text-4xl font-bold">My work</h2>
+        <p class="section-paragraph">Below are a couple of projects i've worked on.</p>
+
+        <div class="space-y-12 my-16">
+
+          <!-- project 1 -->
+          <div
+          class="w-full border border-nav p-10 lg:space-x-10 justify-center lg:justify-start grid grid-cols-1 lg:grid-cols-3 gap-2">
+            <!-- Project image-->
+            <div class="mb-6 lg:mb-0">
+              <img src="img/JohnWick.jpg" alt="" class="border w-full h-48 lg:h-72 object-cover shadow-lg rounded-lg">
+            </div>
+
+            <!-- Project info-->
+            <div class="flex flex-wrap justify-center text-center lg:text-left lg:block col-span-2">
+              <h3 class="text-3xl font-semibold">Movie API</h3>
+
+              <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                <div class="badge">Node.js</div>
+                <div class="badge">Express</div>
+                <div class="badge">MongoDB</div>
+                <div class="badge">Heroku</div>
+              </div>
+
+              <p>The API provides users with access to movies and different information about these movies like the directors, movie genres and movies synopsis. 
+                Users are able to sign up, update their personal information, and create a list of their favorite movies as well as remove movies from their favorite movies list.
+              </p>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/Dj2035/myFlix-Movie-API"
+                class="md:block p-3 px-6 pt-2 lg:pl-0 text-brightRed hover:text-linkHover"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- project 2 -->
+          <div
+            class="w-full border border-nav p-10 lg:space-x-10 justify-center lg:justify-start grid grid-cols-1 lg:grid-cols-3 gap-2">
+            <!-- Project image-->
+            <div class="mb-6 lg:mb-0">
+              <a target="_blank" rel="noopener noreferrer" href="https://dj2035.github.io/myFlix-Angular-client/movies"><img class="border w-full h-48 lg:h-72 object-cover shadow-lg rounded-lg" src="img/angular-myflix.png" alt=""></a>
+            </div>
+
+            <!-- Project info-->
+            <div class="flex flex-wrap justify-center text-center lg:text-left lg:block col-span-2">
+              <h3 class="text-3xl font-semibold">Movie App</h3>
+
+              <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                <div class="badge">Frontend development</div>
+                <div class="badge">Angular</div>
+                <div class="badge">TypeScript</div>
+                <div class="badge">Material Design</div>
+              </div>
+
+              <p>client-side for an application called myFlix using Angular based on its existing server-side code (REST API and database), with supporting documentation.
+                This project was generated with Angular CLI version 14.2.5.
+              </p>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/Dj2035/myFlix-Angular-client"
+                class="md:block p-3 px-6 pt-2 lg:pl-0 text-brightRed hover:text-linkHover ">
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- project 3 -->
+          <div
+            class="w-full border border-nav p-10 lg:space-x-10 justify-center lg:justify-start grid grid-cols-1 lg:grid-cols-3 gap-2">
+            <!-- Project image-->
+            <div class="mb-6 lg:mb-0 justify-center">
+              <a target="_blank" rel="noopener noreferrer" href="https://dj2035.github.io/javaScript-practice/"><img class="border w-full h-48 lg:h-72 object-cover shadow-lg rounded-lg" src="img/pikachu.png" alt=""></a>
+            </div>
+
+            <!-- Project info-->
+            <div class="flex flex-wrap justify-center text-center lg:text-left lg:block col-span-2">
+              <h3 class="text-3xl font-semibold">Pokémon App</h3>
+
+              <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                <div class="badge">JavaScript</div>
+                <div class="badge">Bootstrap</div>
+                <div class="badge">jQuery</div>
+                <div class="badge">Ajax</div>
+              </div>
+
+              <p>A small web application built with HTML, CSS, and JavaScript that loads data from an
+                external API and enables the viewing of data points in detail.
+              </p>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/Dj2035/javaScript-practice"
+                class="md:block p-3 px-6 pt-2 lg:pl-0 text-brightRed hover:text-linkHover ">
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- project 4 -->
+          <div
+            class="w-full border border-nav p-10 lg:space-x-10 justify-center lg:justify-start grid grid-cols-1 lg:grid-cols-3 gap-2">
+            <!-- Project image-->
+            <div class="mb-6 lg:mb-0 relative">
+              <a target="_blank" rel="noopener noreferrer" href="https://dj2035.github.io/meet/"><img class="border w-full h-48 lg:h-72 object-cover shadow-lg rounded-lg" src="img/meetapp.png" alt=""></a>
+            </div>
+
+            <!-- Project info-->
+            <div class="flex flex-wrap justify-center text-center lg:text-left lg:block col-span-2">
+              <h3 class="text-3xl font-semibold">Meet App</h3>
+
+              <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                <div class="badge">JavaScript</div>
+                <div class="badge">React</div>
+                <div class="badge">Recharts</div>
+                <div class="badge">Enzyme</div>
+                <div class="badge">AWS</div>
+                <div class="badge">Google cloud platform</div>
+              </div>
+
+              <p>A serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. 
+                The application uses the Google Calendar API to fetch upcoming events.
+              </p>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/Dj2035/meet"
+                class="md:block p-3 px-6 pt-2 lg:pl-0 text-brightRed hover:text-linkHover ">
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- project 5 -->
+          <div
+            class="w-full border border-nav p-10 lg:space-x-10 justify-center lg:justify-start grid grid-cols-1 lg:grid-cols-3 gap-2">
+            <!-- Project image-->
+            <div class="mb-6 lg:mb-0 relative">
+              <a target="_blank" rel="noopener noreferrer" href=""><img src="img/project-6.jpg" alt="" class="border w-full h-48 lg:h-72 object-cover shadow-lg rounded-lg"></a>
+            </div>
+
+            <!-- Project info-->
+            <div class="flex flex-wrap justify-center text-center lg:text-left lg:block col-span-2">
+              <h3 class="text-3xl font-semibold">Chat App</h3>
+
+              <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                <div class="badge">React Native</div>
+                <div class="badge">Expo</div>
+                <div class="badge">Gifted Chats</div>
+                <div class="badge">Google Firebase</div>
+                <div class="badge">PWA</div>
+              </div>
+
+              <p>A chat app for mobile devices built using React Native. 
+                The app provides users with a chat interface and options to share images and their location.
+              </p>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/Dj2035/chat-app"
+                class="md:block p-3 px-6 pt-2 lg:pl-0 text-brightRed hover:text-linkHover ">
+                GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact form-->
+    <div class="container mt-32 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      <section class="w-full">
+        <h1 id="contact" class="secondary-title text-4xl font-bold">Contact me</h1>
+        <p class="section-paragraph">Feel free to contact me any time, though any</p>
+
+        <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-16">
+          <form class="space-y-8 input-form" action="https://formspree.io/f/xvoyvykp" method="POST">
+            <div>
+              <label class="block mb-4 text-xl font-bold">Your name</label>
+              <input type="text" name="Name" id="form-name" class="w-full border border-input-border bg-slate-100 px-4 py-2" required>
+            </div>
+            <div>
+              <label for="email" class="block mb-4 text-xl font-bold">Your email</label>
+              <input type="email" name="Email" id="form-email" class="w-full border border-input-border bg-slate-100 px-4 py-2" required>
+            </div>
+            <div>
+              <label class="block mb-4 text-xl font-bold">Your message</label>
+              <textarea name="Message" id="form-message"
+                class="w-full border border-input-border bg-slate-100 px-4 py-4 h-56 resize-none" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button id="form-btn" type="submit" class="px-6 py-2 bg-brightRed rounded-full font-bold hover:bg-brightRedLight">Send
+              it!</button>
+          </form>
+
+          <!-- Contact info-->
+          <div class="mt-12">
+            <p>0173 3240994</p>
+            <a href="mailto:donke.dj@gmail.com" class="underline mt-3 block">donkeju.dj@gmail.com</a>
+            <a href="img/resume-jude.pdf" class="underline mt-3 block" download="Jude's CV">Download my CV</a>
+
+            <!-- Socials-->
+            <div class="flex mt-20 space-x-6">
+              <!-- Github logo -->
+              <a href="https://github.com/Dj2035"><img src="img/github_icon.svg" alt="github"></a>
+              <!-- Twitter logo -->
+              <a href="https://twitter.com/pushhardder"><img src="img/twitter_icon.svg" alt="twitter"></a>
+              <!-- LinkedIn logo -->
+              <a href="https://www.linkedin.com/in/jude-dongmo-669a30196/"><img src="img/linkedin_icon.svg"
+                alt="linkedin"></a>
+              <!-- Medium logo -->
+              <a href="https://medium.com/@donkeju.dj"><img src="img/medium_icon.svg" alt="medium"></a>
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
