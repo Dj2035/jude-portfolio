@@ -78,6 +78,10 @@ html, body {
   transition: background 200ms, border-color 200ms;
 }
 
+.selected-circle {
+  @apply bg-brightRed;
+}
+
 .nav-dot:hover span {
   opacity: 1;
 }
